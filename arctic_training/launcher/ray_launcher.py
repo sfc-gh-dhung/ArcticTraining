@@ -207,9 +207,9 @@ if __name__ == "__main__":
     if not args.config.exists():
         raise FileNotFoundError(f"Config file {args.config} not found.")
 
-    result = launch(
+    __return__ = launch(
         config_file=str(args.config),
         mode=args.mode,
         python_profile=args.python_profile,
     )
-    print(result)
+    print(__return__)
